@@ -73,6 +73,17 @@ coverage.xml
 *.secret
 config.local.json
 
+# Ignore private keys inside config
+config/*.key
+config/*.pem
+config/*.p12
+config/*.der
+config/*_private.*
+config/*private*
+config/*.crt
+config/*.csr
+
+
 # -----------------------------------------
 # Mac / OS Files
 # -----------------------------------------
