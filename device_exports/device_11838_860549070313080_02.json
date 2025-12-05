@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "exported_at": "2025-11-26T21:13:19.118518",
+    "device_id": 11838,
+    "clientid": "860549070313080",
+    "name": "02",
+    "type_id": 2,
+    "format": "Complete single device data"
+  },
+  "device": {
+    "id": 11838,
+    "parent_id": 0,
+    "status": 0,
+    "online_status": 2,
+    "type_id": 2,
+    "type_no_id": 0,
+    "clientid": "860549070313080",
+    "name": "02",
+    "status_table": "{\"C\": \"8966032511956330478F\", \"E\": \"860549070313080\", \"M\": \"Air795ULuatOS-Air_V4032_RDA8910_BT_NOLVGL_FLOAT2.0.14\", \"R\": 31, \"W\": 1, \"CMD\": 0, \"CELL\": \"857.162489450.28;\", \"TYPE\": 1}",
+    "param_table": "{\"010390\": {\"D\": \"0103900000003F00000000000009380000138400003A3C00000000003D041800000B960000000000000209000000000002D87900000063FFFFFFFFFFFFFFFF00000064000000640000006400000064000000640000006400000064000000640000006400000064000000640000006400000064000000640000006400000032C6E014F001000A0A0E480F84FFFFFFFF0016051B1A4B\", \"ID\": \"860549070313080\", \"CMD\": 21}}",
+    "data": "{\"open_led_status\": 1}",
+    "connected_at": "2025-11-26 20:57:17",
+    "disconnected_at": "2025-11-26 16:41:07",
+    "deleted_at": null,
+    "created_at": "2025-10-07 08:57:51",
+    "updated_at": "2025-11-26 21:59:39",
+    "DeviceLocation": {
+      "id": 29526,
+      "device_id": 11838,
+      "lng": 0,
+      "lat": 0,
+      "ipv4": "",
+      "ipv6": "",
+      "country": "",
+      "province": "",
+      "city": "",
+      "area": "",
+      "address": "",
+      "deleted_at": null,
+      "created_at": "2025-10-07 08:57:51",
+      "updated_at": "2025-11-26 20:57:17"
+    }
+  }
+}

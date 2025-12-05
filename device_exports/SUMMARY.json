@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "exported_at": "2025-11-26T21:13:19.119186",
+    "total_devices": 5,
+    "total_types": 2
+  },
+  "summary_by_type": {
+    "2": {
+      "type_name": "WIFI Single Light",
+      "count": 3,
+      "devices": [
+        {
+          "id": 11839,
+          "name": "03",
+          "clientid": "860549070312900",
+          "online_status": 1
+        },
+        {
+          "id": 11838,
+          "name": "02",
+          "clientid": "860549070313080",
+          "online_status": 2
+        },
+        {
+          "id": 11837,
+          "name": "01",
+          "clientid": "860549070312868",
+          "online_status": 1
+        }
+      ]
+    },
+    "14": {
+      "type_name": "PLC Dual Lights",
+      "count": 2,
+      "devices": [
+        {
+          "id": 11841,
+          "name": "02",
+          "clientid": "862419071800881",
+          "online_status": 1
+        },
+        {
+          "id": 11840,
+          "name": "01",
+          "clientid": "862419071800642",
+          "online_status": 1
+        }
+      ]
+    }
+  },
+  "files_generated": {
+    "all_devices": "all_devices.json",
+    "by_type_grouped": "devices_by_type.json",
+    "by_type_separate": "[device_type_N_name.json]",
+    "by_device_individual": "[device_ID_clientid_name.json]",
+    "summary": "SUMMARY.json"
+  },
+  "notes": {
+    "all_devices.json": "All devices in one file (complete, no truncation)",
+    "devices_by_type.json": "All devices grouped by type in one file",
+    "device_type_*.json": "Each device type in separate file",
+    "device_*.json": "Each device in individual file (detailed)",
+    "SUMMARY.json": "This summary file"
+  }
+}
