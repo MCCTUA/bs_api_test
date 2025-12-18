@@ -12,7 +12,7 @@ import sys
 # Server B (Control ON/OFF): ใช้ Token แบบ User Session (Browser) ซึ่งระบบ Enterprise API ยังไม่เปิดให้ใช้
 # สถานะ: เราจึงต้องไป "แอบ" Copy Token นี้มาจาก Browser เพื่อมาใส่ใน Code
 
-LONG_LIVED_TOKEN = "NTN8MWhjOWIyMThtdzBkZXB3bjhidjIzbzNhMDBjMThlejN8MTc2NDg5OTQ2Mw=="
+LONG_LIVED_TOKEN = "NTN8MWhjOWIyMWFpdzBkZjFnaHM4b28zOW4xNDB1bmhzdGN8MTc2NjA3MjYxNw=="
 
 MQTT_API_URL = "https://light.smartbosun.com/api/mqtt"
 PROJECT_ID = 51
