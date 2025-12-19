@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-🔐 Bosun Auth Manager (Updated v2)
+🔐 BS Auth Manager (Updated v2)
 เพิ่มฟังก์ชัน get_token_with_expiry เพื่อรองรับการสร้าง Browser Token
 """
 
@@ -18,11 +18,11 @@ CONFIG_DIR = os.path.join(BASE_DIR, "config")
 PRIVATE_KEY_PATH = os.path.join(CONFIG_DIR, "private_key.pem")
 TOKEN_CACHE_FILE = os.path.join(CONFIG_DIR, "token_cache.json")
 
-BOSUN_AUTH_URL = "http://open.smartbosun.com:8000/api/v1/access_token"
+BS_AUTH_URL = "http://open.smartbosun.com:8000/api/v1/access_token"
 ENTERPRISE_ID = 51
 APPID = "1hc9b214nt0debmj7jf51e18j0s4fj6h"
 
-class BosunAuthManager:
+class BsAuthManager:
     def __init__(self):
         self.enterprise_id = ENTERPRISE_ID
         self.appid = APPID
@@ -63,7 +63,7 @@ class BosunAuthManager:
         }
 
         try:
-            response = requests.post(BOSUN_AUTH_URL, json=payload, timeout=10)
+            response = requests.post(BS_AUTH_URL, json=payload, timeout=10)
             if response.status_code == 200:
                 data = response.json()
                 if "token" in data and "access_token" in data["token"]:

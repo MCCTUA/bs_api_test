@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-🚀 Bosun IoT Controller - Stable Version 
+🚀 BS IoT Controller - Stable Version 
 """
 
 import requests
@@ -16,7 +16,7 @@ LONG_LIVED_TOKEN = "NTN8MWhjOWIyMWFpdzBkZjFnaHM4b28zOW4xNDB1bmhzdGN8MTc2NjA3MjYx
 
 MQTT_API_URL = "https://light.smartbosun.com/api/mqtt"
 PROJECT_ID = 51
-DEVICE_CLIENTID = "860549070313080"
+DEVICE_CLIENTID = "860549070312868"
 
 def send_command(cmd_code, d_data, description=""):
     print("\n" + "="*60)
@@ -99,7 +99,7 @@ def send_refresh():
         print("⏳ รอสัก 3-5 วินาที เพื่อให้ค่าอัปเดต...")
 
 
-    print("\n🚀 Bosun Controller (Stable 2025)")
+    print("\n🚀 BS Controller (Stable 2025)")
     print(f"   Target: {DEVICE_CLIENTID}")
     
     while True:
@@ -115,7 +115,7 @@ def send_refresh():
         elif choice == "3": break
 
 def main():
-    print("\n🚀 Bosun Controller (Stable 2025)")
+    print("\n🚀 BS Controller (Stable 2025)")
     print(f"   Target: {DEVICE_CLIENTID}")
     
     while True:

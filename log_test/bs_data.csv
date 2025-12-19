@@ -1,0 +1,2 @@
+timestamp,mode,status,power_w,voltage,current_a,frequency,power_factor,energy_kwh,temperature,humidity,brightness,light_intensity,tilt_sensitivity
+2025-12-19 08:11:41,Active(Refresh),ON,82.43,236.2,0.35,50.04,0.97,0.371,30.51,37.83,100.0,0.0,65535.0

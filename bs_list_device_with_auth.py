@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-📋 Bosun Device Lister
+📋 BS Device Lister
 แสดงรายการอุปกรณ์ทั้งหมด โดยใช้ Token อัตโนมัติจาก bs_auth.py
 """
 
@@ -10,20 +10,20 @@ import sys
 
 # ตรวจสอบว่ามีไฟล์ bs_auth.py อยู่หรือไม่
 try:
-    from bs_auth import BosunAuthManager
+    from bs_auth import BsAuthManager
 except ImportError:
     print("❌ Error: ไม่พบไฟล์ bs_auth.py กรุณาวางไว้ในโฟลเดอร์เดียวกัน")
     sys.exit(1)
 
 # ==================== CONFIG ====================
-BOSUN_API_URL = "http://open.smartbosun.com:8000"
+BS_API_URL = "http://open.smartbosun.com:8000"
 
 # สร้าง Auth Manager
-auth_manager = BosunAuthManager()
+auth_manager = BsAuthManager()
 
 def list_all_devices():
     print("\n" + "="*60)
-    print("📋 Bosun IoT - Device List")
+    print("📋 BS IoT - Device List")
     print("="*60)
     
     # 1. ขอ Token (แบบไม่ต้อง Format ซ้ำ)
@@ -33,7 +33,7 @@ def list_all_devices():
         print("❌ ไม่สามารถขอ Token ได้")
         return
 
-    url = f"{BOSUN_API_URL}/api/v1/device"
+    url = f"{BS_API_URL}/api/v1/device"
     
     # Parameters ในการดึงข้อมูล
     params = {

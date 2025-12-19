@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-📡 BOSUN SMART LOGGER & MONITOR
+📡 BS SMART LOGGER & MONITOR
 - Option 1: Force Refresh (Active) -> สั่งให้อัปเดตแล้วบันทึก
 - Option 2: Passive Monitor -> อ่านค่าเฉยๆ เพื่อดูพฤติกรรม Server
-- บันทึกข้อมูลลงไฟล์ CSV (bosun_data.csv) ทุกครั้ง
+- บันทึกข้อมูลลงไฟล์ CSV (bs_data.csv) ทุกครั้ง
 """
 
 import time
@@ -23,7 +23,7 @@ except ImportError:
 
 # ==================== CONFIG ====================
 POLL_INTERVAL = 600   # รอบการทำงาน (วินาที) - ค่าเดิม 600 (10 นาที)
-LOG_FILENAME = "bosun_data.csv"
+LOG_FILENAME = "bs_data.csv"
 CLEAR_SCREEN = True 
 
 #หาตำแหน่งไฟล์ Script ปัจจุบัน
@@ -34,7 +34,7 @@ LOG_DIR = os.path.join(BASE_DIR, "log_test")
 if not os.path.exists(LOG_DIR):
     os.makedirs(LOG_DIR)
 # กำหนดไฟล์ให้อยู่ในโฟลเดอร์นั้น
-LOG_FILENAME = os.path.join(LOG_DIR, "bosun_data.csv")
+LOG_FILENAME = os.path.join(LOG_DIR, "bs_data.csv")
 
 # -----------------------------------------------------    
 
@@ -117,7 +117,7 @@ def save_to_log(data_dict, mode_name):
 # ==================== MAIN ====================
 
 def main():
-    print("\n🚀 BOSUN SMART LOGGER")
+    print("\n🚀 BS SMART LOGGER")
     print("="*30)
     print("1. Force Refresh Mode (กระตุ้นให้อัปเดต)")
     print("2. Passive Mode (อ่านอย่างเดียว - ดูพฤติกรรม Server)")

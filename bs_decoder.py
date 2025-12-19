@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-✅ BOSUN DECODER (v13) - SAVED AS bs_decoder.py
+✅ BS DECODER (v13) - SAVED AS bs_decoder.py
 ต้องบันทึกไฟล์นี้ในชื่อ "bs_decoder.py" เท่านั้น
 """
 
@@ -11,15 +11,15 @@ from datetime import datetime
 
 # ตรวจสอบไฟล์ bs_auth
 try:
-    from bs_auth import BosunAuthManager
+    from bs_auth import BsAuthManager
 except ImportError:
     print("❌ Error: ไม่พบไฟล์ bs_auth.py")
     sys.exit(1)
 
 # ==================== CONFIG ====================
-BOSUN_API_URL = "http://open.smartbosun.com:8000"
-TARGET_CLIENTID = "860549070313080" # <-- ตัวแปรสำคัญที่ Poller เรียกใช้
-auth_manager = BosunAuthManager()
+BS_API_URL = "http://open.smartbosun.com:8000"
+TARGET_CLIENTID = "860549070312868" # <-- ตัวแปรสำคัญที่ Poller เรียกใช้
+auth_manager = BsAuthManager()
 
 # ==================== MAPPING CONFIG ====================
 FINAL_OFFSETS = {
@@ -41,7 +41,7 @@ def get_device_data():
     if not token: return None
 
     headers = {"Authorization": f"Bearer {token}"}
-    url = f"{BOSUN_API_URL}/api/v1/device"
+    url = f"{BS_API_URL}/api/v1/device"
     params = {"model": "Device", "Device[page_size]": 10}
     
     try:
